@@ -1,0 +1,83 @@
+
+
+/* =GENERAL
+--------------------- */
+
+	/* Clear Fix Hack - add  class="fixed"  to div's that have floated elements in them */
+	.fixed:after{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+		.fixed{display:block;}
+		/*  \*/
+		.fixed{min-height:1%;}
+		* html .fixed{height:1%;}
+	
+/* =LAYOUT
+----------------------------------*/
+
+#cv{ margin:66px auto 0 auto; width:100%; padding:0 0 40px;  }
+
+	.cv-section{ margin:0 40px; padding:30px 0; }
+				
+		.first-cv-section{ margin:0; padding:30px 40px; }
+			
+			.person{ float:left; margin-top:20px; width:480px; }
+				.person img{ float:left; margin-right:25px; padding:10px; }
+				.person  h1{ margin-top:25px; }
+			
+			#contact-info{ float:right; margin-right:10px; }
+				ul#social-media{ margin-bottom:18px; }
+				ul#social-media li{ display:inline; }	
+			
+		.cv-section-name{ float:left; width:25%; }
+				
+		.cv-section-items{ float:right; margin-right:10px; width:75%; }
+		
+			.item{ margin-bottom:20px; padding-bottom:20px; }
+				
+				.item h4{ float:right; margin:0 0 1em; padding:2px 10px; }
+				
+				.item p{ padding:0 0 15px; }
+				.item ul{ padding:0 0 15px; }
+					.item ul li{}
+					
+			.last-item{ margin-bottom:0; padding-bottom:0; }
+
+
+/* =COLORS-TYPOGRAPHY
+----------------------------------*/
+
+#cv{ background-color:#FFF; border-bottom:15px solid #FDB020; border-top:15px solid #FDB020; }
+
+	.cv-section{ border-bottom:1px solid #dfdfdf; }
+		
+		.first-cv-section{ background-color:#F8F8F8; }
+			
+				.person img{ background-color:#FFF; border:1px solid #dedede; }
+				.person h1{ color:#475261; font-size:48px; font-weight:400; letter-spacing:-1px; }
+				.person h2{ color:#475261; font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:400; letter-spacing:-.7px; text-transform:uppercase; }
+			
+			#contact-info{}
+				ul#social-media{ list-style:none; }
+				ul#social-media li{}	
+			
+		.cv-section-name{}
+			h2.cv-section-name{ color:#3C4756; font-size:24px; font-style:italic; font-weight:400; letter-spacing:-1px; }
+		
+		.cv-section-items{}
+		
+			.item{ border-bottom:1px solid #dfdfdf; color: #333; font-weight: bold; }
+				
+				.item h4{ background-color:#eee; color:#333; font-size:14px; text-transform:uppercase; }
+					.item h4:hover{ background-color:#000; color:#fff; }
+				
+				.item h2{ color:#06A; font-family:Georgia, serif; font-size:22px; font-weight:400; letter-spacing:-1px; }
+					.item h2 a{ color:#06A; text-decoration:none; }
+				
+				.item h3{ color:#262625; font-family:Georgia, serif; font-size:15px; font-style:italic; font-weight:400; }
+				
+				.item p{ text-align:justify; }
+				.item ul{ list-style:inside; text-align:justify; }
+					.item ul li{ list-style-type:disc; }
+					
+			.last-item{ border-bottom:none; }
+			
+		.last-cv-section{ border-bottom:none; }
