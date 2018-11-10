@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Test</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="_layout/menus.css" type="text/css" />
+	<link href="_layout/screen-style.css" rel="stylesheet" type="text/css" />
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+	
+	<!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/cubeportfolio.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+
+
+	<!-- Theme skin -->
+	<link id="t-colors" href="skins/red.css" rel="stylesheet" />
+
+
+	<!-- boxed bg -->
+	<link id="bodybg" href="bodybg/bg8.css" rel="stylesheet" type="text/css" />
+	
+	<!-- //////// jQuery ////////  -->
+	
+	<script src="_layout/js/jquery-1.3.1.min.js" type="text/javascript"></script>
+
+	<!-- //////// Cufon Font Replacement ////////  -->
+	
+	<script src="_layout/js/cufon-yui.js" type="text/javascript"></script>
+	<script src="_layout/js/Aller.font.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		Cufon.replace('h1');
+		Cufon.replace('.item h2');
+		Cufon.replace('h2.cv-section-name');
+	</script>
+	
+	<!-- //////// FancyBox - jQuery powered Lightbox ////////  -->
+	
+	<link rel="stylesheet" type="text/css" href="_layout/js/fancybox/jquery.fancybox-1.2.6.css" media="screen" />
+	<script type="text/javascript" src="_layout/js/fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.lightbox").fancybox({
+				'overlayOpacity': 0.7,
+				'overlayColor'	: '#333'
+			});
+		});
+	</script>
+	 
+	<!-- //////// Tipsy - custom Tooltips ////////  -->
+	
+	<link rel="stylesheet" type="text/css" href="_layout/js/tipsy/tipsy.css" />
+	<script type="text/javascript" src="_layout/js/tipsy/jquery.tipsy.js"></script>
+	<script type='text/javascript'>
+	  $(function() {
+		$('.tip').tipsy({gravity: 'n'});
+	  });
+	</script>
+	
+	<style>
+			.myclass { font-size: 12pt; font-weight: bold; text-align: right; }
+			.fontclass { font-size: 11pt; color: black; }
+	</style>
+	<style>
+		* {
+    			box-sizing: border-box;
+    		}
+    			body {
+    			font-family: Arial, Helvetica, sans-serif;
+		}
+		.gridHeader { 
+			grid-area: header; 
+			background: url('_layout/top1.jpg'); 
+			background-size: 100%; 
+			height: 260px; 
+			vertical-align: bottom;
+		}
+		.headerTitle {
+			postion: absolute;
+			top: 100px;
+			left: 300px;
+			font-size: 30px;
+		}
+		.gridMenu{ 
+			grid-area: menu; 
+		}
+		.gridContent { 
+			grid-area: main; 
+			font-size: 11pt;
+			padding: 20px;
+		}
+		.gridFooter { 
+			grid-area: footer; 
+			text-align: left;
+		}
+
+		.grid-container {
+  			display: grid;
+  			grid-template-areas:
+    				'header header '
+    				'menu main'
+    				'footer footer';
+  			grid-gap: 5px;
+  			background-color: #c3c3c3;
+  			padding: 1px;
+		}
+		.grid-container > div {
+  			background-color: rgba(255, 255, 255, 0.8);
+  			text-align: left;
+  			padding: 20;
+		}
+		.myicons { margin:0; padding: 3; padding-right: 7; }
+		.fa {
+  			padding: 10px;
+  			font-size: 13pt;
+  			width: 40px;
+  			text-align: center;
+  			text-decoration: none;
+  			margin: 5px 2px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="grid-container">
+  	<div class="gridHeader" style="">
+  		<div class="person">
+			<a class="lightbox" rel="mypics" href="_layout/d1.jpg" title="David Shapiro" >
+				<img src="_layout/d1.jpg" width="80" height="100" alt="David Shapiro" />
+			</a>
+			<h1>&nbsp;&nbsp;&nbsp;David Shapiro</h1>
+			<h2> &nbsp;&nbsp;&nbsp;Sr. Java Developer</h2>i
+		</div>
+  		<div id="demo-container" style="position: absolute; top: 205px; left: 180px; ">
+  			<ul id="simple-menu">
+    				<li><a href="home.html" class="current"><span>Home</span></a></li>
+    				<li><a href="csoon.html"><span>Family</span></a></li>
+    				<li><a href="csoon.html"><span>Friends</span></a></li>
+    				<li><a href="csoon.html"><span>Ex girlfriends</span></a></li>
+    				<li><a href="csoon.html"><span>Michael &amp; Candice</span></a></li>
+    				<li><a href="csoon.html"><span>Motorcycles</span></a></li>
+  			</ul>
+		</div>
+  	</div>
+  	<div class="gridMenu">
+  		<ul id="navmenu">
+  			<li><a href="csoon.html">Album 1</a></li>
+  			<li><a href="csoon.html">Album 2</a></li>
+  			<li><a href="csoon.html">Album 3</a></li>
+  			<li><a href="csoon.html">Album 4</a></li>
+  			<li><a href="csoon.html">Album 5</a></li>
+		</ul>
+  	</div>
+  	
+  	<div class="gridContent">
+  		<span>
+                             <table><tr><td class="tdbuttom"><strong>This is me in 2016 - 2018 after Tara was gone.</strong><br/></td></tr>
+                             <tr><td>
+				<a class="lightbox" rel="mypics" href="gallery/D1.jpg" title="David Shapiro" >
+					<img src="gallery/D1.jpg" width="80" height="100" alt="David Shapiro" />
+				</a>
+			       <a class="lightbox" rel="mypics" href="gallery/D2.jpg" title="David Shapiro" >
+					<img src="gallery/D2.jpg" width="80" height="100" alt="David Shapiro" />
+				</a>
+                               <a class="lightbox" rel="mypics" href="gallery/D3.jpg" title="David Shapiro" >
+					<img src="gallery/D3.jpg" width="80" height="100" alt="David Shapiro" />
+				</a>
+                               <a class="lightbox" rel="mypics" href="gallery/D4.jpg" title="David Shapiro" >
+					<img src="gallery/D4.jpg" width="100" height="100" alt="David Shapiro" />
+				</a>
+                                <a class="lightbox" rel="mypics" href="gallery/D5.jpg" title="David Shapiro" >
+					<img src="gallery/D5.jpg" width="100" height="100" alt="David Shapiro" />
+				</a>
+                                <a class="lightbox" rel="mypics" href="gallery/D6.jpg" title="David Shapiro" >
+					<img src="gallery/D6.jpg" width="140" height="100" alt="David Shapiro" />
+				</a>
+				</td></tr>
+				<tr><td class="tdbuttom"> <strong> This is me as Tara In 2013 </strong> <br/></td></tr>
+				<tr><td>
+                                <a class="lightbox" rel="mypics" href="gallery/T1.jpg" title="Tara Dunn" >
+					<img src="gallery/T1.jpg" width="80" height="100" alt="Tara Dunn" />
+				</a>
+                               <a class="lightbox" rel="mypics" href="gallery/T2.jpg" title="Tara Dunn" >
+					<img src="gallery/T2.jpg" width="80" height="100" alt="Tara Dunn" />
+				</a>
+                                <a class="lightbox" rel="mypics" href="gallery/T3.jpg" title="Tara Dunn" >
+					<img src="gallery/T3.jpg" width="80" height="100" alt="Tara Dunn" />
+				</a>
+				<a class="lightbox" rel="mypics" href="gallery/T4.jpg" title="Tara Dunn" >
+					<img src="gallery/T4.jpg" width="70" height="100" alt="Tara Dunn" />
+				</a>
+				<a class="lightbox" rel="mypics" href="gallery/T5.jpg" title="Tara Dunn" >
+					<img src="gallery/T5.jpg" width="70" height="100" alt="Tara Dunn" />
+				</a>
+				<a class="lightbox" rel="mypics" href="gallery/T6.jpg" title="Tara Dunn" >
+					<img src="gallery/T6.jpg" width="160" height="100" alt="Tara Dunn" />
+				</a>
+				<a class="lightbox" rel="mypics" href="gallery/T7.jpg" title="Tara Dunn" >
+					<img src="gallery/T7.jpg" width="80" height="100" alt="Tara Dunn" />
+				</a>
+				<a class="lightbox" rel="mypics" href="gallery/T8.jpg" title="Tara Dunn" >
+					<img src="gallery/T8.jpg" width="80" height="100" alt="Tara Dunn" />
+				</a>
+				<a class="lightbox" rel="mypics" href="gallery/T9.jpg" title="Tara Dunn" >
+					<img src="gallery/T9.jpg" width="80" height="100" alt="Tara Dunn" />
+				</a>
+				</td></tr>
+				<tr><td class="tdbuttom"> <strong>This is me before Tara In 2011. </strong><br/></td></tr>
+				<tr><td>
+				<a class="lightbox" rel="mypics" href="gallery/O1.jpg" title="David Shapiro" >
+					<img src="gallery/O1.jpg" width="140" height="100" alt="David Shapiro" />
+				</a>
+				<a class="lightbox" rel="mypics" href="gallery/O2.jpg" title="David Shapiro" >
+					<img src="gallery/O2.jpg" width="140" height="100" alt="David Shapiro" />
+				</a>
+				<a class="lightbox" rel="mypics" href="gallery/O3.jpg" title="David Shapiro" >
+					<img src="gallery/O3.jpg" width="140" height="100" alt="David Shapiro" />
+				</a>
+				</td></tr>
+				</table>
+		</span>
+  	</div>  
+
+  	<div class="gridFooter">&copy;&nbsp;David Shapiro&nbsp;&nbsp;
+  		<ul id="social-media" style="float: right; ">
+			<li><a target="_blank" href="https://twitter.com/DimaShapiro" class="fa fa-twitter"></a></li>
+			<li><a target="_blank" href="https://www.facebook.com/dimavoron" class="fa fa-facebook"></a></li>
+			<li><a href="#" class="fa fa-google"></a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/in/davidashapiro" class="fa fa-linkedin"></a></li>
+		</ul>
+  	</div>
+</div>
+
+</body>
+</html>
