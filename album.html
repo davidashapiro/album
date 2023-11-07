@@ -11,56 +11,34 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/cubeportfolio.min.css" rel="stylesheet" />
 	<link href="css/style.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/screen-style.css" type="text/css" />
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/scrolltop.js" type="text/javascript"></script>
 	<!-- Theme skin -->
 	<link id="t-colors" href="skins/default.css" rel="stylesheet" />
 
 	<!-- boxed bg -->
 	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body style="background: #eee">
 
 
 
-<div id="wrapper">
+<div id="wrapper" class="boxed">
 
 	<!-- start header -->
 	<header>
-			<div class="top">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<ul class="topleft-info">
-								<li><i class="fa fa-phone"></i> +1 949-4442260</li>
-								<li><i class="fa fa-envelope"></i><a href="mailto:d321973@mail.com"> d321973@mail.com</a></li>
-							</ul>
-						</div>
-						<div class="col-md-3">
-							<ul class="social-network" style="">
-								<li><a href="https://www.facebook.com/dimavoron"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="https://twitter.com/DimaShapiro"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/davidashapiro"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://pin.it/jensmwrgshht7g"><i class="fa fa-pinterest"></i></a></li>
-								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-							</ul>
-						</div>
-						<div class="col-md-3">
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search" title="Click to start searching"></span>
-							</form>
-						</div>
-						</div>
-					</div>
-				</div>
-			</div>	
+            <div w3-include-html="header.html"></div>
 			<div class="navbar navbar-default navbar-static-top">
             			<div class="container">
                 			<div class="navbar-header">
-                    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    				<button type="button" title="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         			<span class="icon-bar"></span>
                         			<span class="icon-bar"></span>
                         			<span class="icon-bar"></span>
@@ -92,174 +70,38 @@
 	</div>
 	</section>
 	<section id="content">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<h4 class="heading">Recent Photo</h4>
-				<div id="grid-container" class="cbp-l-grid-projects">
-					<ul>
-						<li class="cbp-item graphic">
-							<div class="cbp-caption">
-								<div class="cbp-caption-defaultWrap">
-									<img src="gallery/D1.jpg" alt="" />
-								</div>
-								<div class="cbp-caption-activeWrap">
-									<div class="cbp-l-caption-alignCenter">
-										<div class="cbp-l-caption-body">
-											<a href="gallery/D1.jpg" class="cbp-lightbox cbp-l-caption-buttonRight">view larger</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cbp-l-grid-projects-title">David Shapiro</div>
-							<div class="cbp-l-grid-projects-desc"></div>
-						</li>
-						<li class="cbp-item web-design logo">
-							<div class="cbp-caption">
-								<div class="cbp-caption-defaultWrap">
-									<img src="gallery/D2.jpg" alt="" />
-								</div>
-								<div class="cbp-caption-activeWrap">
-									<div class="cbp-l-caption-alignCenter">
-										<div class="cbp-l-caption-body">
-											<a href="gallery/D2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight">view larger</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cbp-l-grid-projects-title">David Shapiro</div>
-							<div class="cbp-l-grid-projects-desc"></div>
-						</li>
-						<li class="cbp-item graphic logo">
-							<div class="cbp-caption">
-								<div class="cbp-caption-defaultWrap">
-									<img src="gallery/D3.jpg" alt="" />
-								</div>
-								<div class="cbp-caption-activeWrap">
-									<div class="cbp-l-caption-alignCenter">
-										<div class="cbp-l-caption-body">
-											<a href="gallery/D3.jpg" class="cbp-lightbox cbp-l-caption-buttonRight">view larger</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cbp-l-grid-projects-title">David Shapiro</div>
-							<div class="cbp-l-grid-projects-desc"></div>
-						</li>
-						<li class="cbp-item web-design graphic">
-							<div class="cbp-caption">
-								<div class="cbp-caption-defaultWrap">
-									<img src="gallery/T1.jpg" alt="" />
-								</div>
-								<div class="cbp-caption-activeWrap">
-									<div class="cbp-l-caption-alignCenter">
-										<div class="cbp-l-caption-body">
-											<a href="gallery/T1.jpg" class="cbp-lightbox cbp-l-caption-buttonRight">view larger</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cbp-l-grid-projects-title">Tara Dunn</div>
-							<div class="cbp-l-grid-projects-desc"></div>
-						</li>
-						<li class="cbp-item identity web-design">
-							<div class="cbp-caption">
-								<div class="cbp-caption-defaultWrap">
-									<img src="gallery/T2.jpg" alt="" />
-								</div>
-								<div class="cbp-caption-activeWrap">
-									<div class="cbp-l-caption-alignCenter">
-										<div class="cbp-l-caption-body">
-											<a href="gallery/T2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight">view larger</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cbp-l-grid-projects-title">Tara Dunn</div>
-							<div class="cbp-l-grid-projects-desc"></div>
-						</li>
-						<li class="cbp-item identity web-design">
-							<div class="cbp-caption">
-								<div class="cbp-caption-defaultWrap">
-									<img src="gallery/T3.jpg" alt="" />
-								</div>
-								<div class="cbp-caption-activeWrap">
-									<div class="cbp-l-caption-alignCenter">
-										<div class="cbp-l-caption-body">
-											<a href="gallery/T3.jpg" class="cbp-lightbox cbp-l-caption-buttonRight">view larger</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cbp-l-grid-projects-title">Tara Dunn</div>
-							<div class="cbp-l-grid-projects-desc"></div>
-						</li>
-						<li class="cbp-item graphic logo">
-							<div class="cbp-caption">
-								<div class="cbp-caption-defaultWrap">
-									<img src="gallery/T4.jpg" alt="" />
-								</div>
-								<div class="cbp-caption-activeWrap">
-									<div class="cbp-l-caption-alignCenter">
-										<div class="cbp-l-caption-body">
-											<a href="gallery/T4.jpg" class="cbp-lightbox cbp-l-caption-buttonRight">view larger</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cbp-l-grid-projects-title">Tara Dunn</div>
-							<div class="cbp-l-grid-projects-desc"></div>
-						</li>
-						<li class="cbp-item graphic logo">
-							<div class="cbp-caption">
-								<div class="cbp-caption-defaultWrap">
-									<img src="gallery/T5.jpg" alt="" />
-								</div>
-								<div class="cbp-caption-activeWrap">
-									<div class="cbp-l-caption-alignCenter">
-										<div class="cbp-l-caption-body">
-											<a href="gallery/T5.jpg" class="cbp-lightbox cbp-l-caption-buttonRight">view larger</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="cbp-l-grid-projects-title">Tara Dunn</div>
-							<div class="cbp-l-grid-projects-desc"></div>
-						</li>
-					</ul>
-				</div>
-				
-				<div class="cbp-l-loadMore-button">
-					<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
-				</div>
+		<a data-fancybox="gallery" href="img/David4.jpg" >
+            <img width="230" height="400" src="img/David4.jpg">
+		<a data-fancybox="gallery" href="img/David2.jpg" >
+            <img width="230" height="400" src="img/David2.jpg">
+		<a data-fancybox="gallery" href="img/David3.jpg" >
+            <img width="270" height="400" src="img/David3.jpg">
+		<a data-fancybox="gallery" href="img/David24.jpg" >
+            <img width="270" height="400" src="img/David24.jpg">
+		<a data-fancybox="gallery" href="img/David25.jpg" >
+            <img width="280" height="400" src="img/David25.jpg">
+		<a data-fancybox="gallery" href="img/David20.jpg" >
+            <img width="300" height="400" src="img/David20.jpg">
+		<a data-fancybox="gallery" href="img/David19.jpg" >
+            <img width="340" height="400" src="img/David19.jpg">
+		<a data-fancybox="gallery" href="img/David22.jpg" >
+            <img width="300" height="400" src="img/David22.jpg">
+		<a data-fancybox="gallery" href="img/David26.jpg" >
+            <img width="220" height="400" src="img/David26.jpg">
+		<a data-fancybox="gallery" href="img/David17.jpg" >
+            <img width="220" height="400" src="img/David17.jpg">
 
-			</div>
-		</div>
-	</div>
 	</section>
-
-	<footer>
-	<div id="sub-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<li><a href="https://www.facebook.com/dimavoron" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="https://twitter.com/DimaShapiro" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/davidashapiro" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://pin.it/jensmwrgshht7g" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	</footer>
+    <div w3-include-html="footer.html"></div>
 </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript">
+		includeHTML();
+	</script>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
@@ -272,7 +114,10 @@
 <script src="js/google-code-prettify/prettify.js"></script>
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
-
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/scrolltop.js" type="text/javascript"></script>
 
 </body>
 </html>
